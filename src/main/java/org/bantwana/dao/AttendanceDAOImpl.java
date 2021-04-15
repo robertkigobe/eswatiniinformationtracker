@@ -398,6 +398,8 @@ public class AttendanceDAOImpl implements AttendanceDAO {
 			));
 		}
 
+		currentSession.clear();
+		currentSession.flush();
 		// return the results
 		return attendance;
 	}
